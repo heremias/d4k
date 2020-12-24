@@ -38,8 +38,8 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         '751a5a3f463e4be759be31748b61737c' => __DIR__ . '/..' . '/laminas/laminas-diactoros/src/functions/parse_cookie_header.legacy.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/web/core/includes/bootstrap.inc',
-        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
         '952683d815ff0a7bf322b93c0be7e4e4' => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src/bootstrap.php',
+        '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -136,6 +136,7 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         'D' => 
         array (
             'Drush\\Internal\\' => 15,
+            'Drush\\Commands\\bootstrap_storybook\\' => 35,
             'Drush\\' => 6,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
@@ -398,6 +399,10 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         'Drush\\Internal\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src/internal-forks',
+        ),
+        'Drush\\Commands\\bootstrap_storybook\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/themes/contrib/bootstrap_storybook/Commands/bootstrap_storybook',
         ),
         'Drush\\' => 
         array (

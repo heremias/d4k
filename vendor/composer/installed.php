@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'ac2b97410161746a0e067f39e897832010c51409',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -259,6 +259,15 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/bootstrap_storybook' => 
+    array (
+      'pretty_version' => '3.1.7',
+      'version' => '3.1.7.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.1.7',
+    ),
     'drupal/breakpoint' => 
     array (
       'replaced' => 
@@ -300,6 +309,16 @@
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/components' => 
+    array (
+      'pretty_version' => 'dev-2.x',
+      'version' => 'dev-2.x',
+      'aliases' => 
+      array (
+        0 => '2.x-dev',
+      ),
+      'reference' => '65b9bdbc0d19bef4054bca23cb98cffafb54e555',
     ),
     'drupal/config' => 
     array (
@@ -638,6 +657,15 @@
         0 => '9.1.0',
       ),
     ),
+    'drupal/gutenberg' => 
+    array (
+      'pretty_version' => '1.11.0',
+      'version' => '1.11.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.11',
+    ),
     'drupal/hal' => 
     array (
       'replaced' => 
@@ -843,12 +871,12 @@
     ),
     'drupal/recommended-project' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'ac2b97410161746a0e067f39e897832010c51409',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1209,8 +1237,8 @@
     array (
       'provided' => 
       array (
-        0 => '1.0',
-        1 => '^1.0',
+        0 => '^1.0',
+        1 => '1.0',
       ),
     ),
     'psr/event-dispatcher-implementation' => 

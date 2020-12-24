@@ -1,0 +1,7 @@
+config_backup.admin:
+  path: '/admin/config/development/configuration/backup'
+  defaults:
+    _form: '\Drupal\config_backup\Form\ConfigBackupForm'
+    _title: 'Backup'
+  requirements:
+    _permission: 'backup configuration'

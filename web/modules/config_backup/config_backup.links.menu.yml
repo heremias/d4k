@@ -1,0 +1,6 @@
+config_backup.admin:
+  title: 'Backup'
+  description: 'Backup Configuration'
+  route_name: config_backup.admin
+  parent: config.sync
+  weight: 4

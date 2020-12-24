@@ -1,0 +1,7 @@
+services:
+  config_backup.service:
+    class: '\Drupal\config_backup\Services\ConfigBackupService'
+    arguments:
+      - '@file_system'
+      - '@config.storage.export'
+      - '@settings'

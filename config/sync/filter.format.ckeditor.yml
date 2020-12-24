@@ -1,0 +1,61 @@
+uuid: 39319d53-4c4e-4c66-bb81-451af2761882
+langcode: en
+status: true
+dependencies:
+  module:
+    - editor
+    - gutenberg
+    - media
+name: CKEditor
+format: ckeditor
+weight: 0
+filters:
+  editor_file_reference:
+    id: editor_file_reference
+    provider: editor
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_caption:
+    id: filter_caption
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_field_mapping:
+    id: filter_field_mapping
+    provider: gutenberg
+    status: false
+    weight: 0
+    settings:
+      enable_filter: '0'
+  filter_oembed:
+    id: filter_oembed
+    provider: gutenberg
+    status: false
+    weight: 0
+    settings:
+      oembed_providers: "#https?://(www\\.)?youtube.com/watch.*#i | http://www.youtube.com/oembed | true\r\n * #https?://youtu\\.be/\\w*#i | http://www.youtube.com/oembed | true\r\n * #https?://(www\\.)?vimeo\\.com/\\w*#i | http://vimeo.com/api/oembed.json | true\r\n * #http://(www\\.)?hulu\\.com/watch/.*#i | http://www.hulu.com/api/oembed.json | true\r\n * #https?://(www\\.)?twitter.com/.+?/status(es)?/.*#i | https://api.twitter.com/1/statuses/oembed.json | true\r\n * #https?://(www\\.)?instagram.com/p/.*#i | https://api.instagram.com/oembed | true\r\n * #https?:\\/\\/(www\\.)?google\\.com\\/maps\\/embed\\?pb\\=.*#i | http://open.iframe.ly/api/oembed | true\r\n * #https?://maps.google.com/maps.*#i | google-maps | LOCAL\r\n * #https?://docs.google.com/(document|spreadsheet)/.*#i | google-docs | LOCAL"
+      oembed_maxwidth: '800'
+  media_embed:
+    id: media_embed
+    provider: media
+    status: true
+    weight: 100
+    settings:
+      default_view_mode: default
+      allowed_media_types: {  }
+      allowed_view_modes: {  }

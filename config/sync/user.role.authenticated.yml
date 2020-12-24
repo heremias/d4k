@@ -1,0 +1,16 @@
+uuid: 1d8f5b45-5273-4328-8d7f-aad88839624e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format ckeditor'
+  - 'use text format gutenberg'
+  - 'use text format unfiltered'
+  - 'view media'

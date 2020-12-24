@@ -1,0 +1,9 @@
+uuid: 880bcc4f-5859-41a0-a144-085c0da65f51
+langcode: en
+status: true
+dependencies: {  }
+id: faculty
+label: faculty
+weight: 5
+is_admin: null
+permissions: {  }

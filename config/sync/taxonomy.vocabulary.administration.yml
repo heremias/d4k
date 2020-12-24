@@ -1,0 +1,8 @@
+uuid: f9f1a0b1-8552-492f-a74d-8c08ccf312b3
+langcode: en
+status: true
+dependencies: {  }
+name: Administration
+vid: administration
+description: ''
+weight: 0

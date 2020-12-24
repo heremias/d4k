@@ -1,0 +1,5 @@
+config_backup.admin:
+  route_name: config_backup.admin
+  title: Backup
+  base_route: config.sync
+  weight: 4

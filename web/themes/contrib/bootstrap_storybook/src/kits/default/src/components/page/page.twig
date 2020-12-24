@@ -1,0 +1,22 @@
+{#
+/**
+ * @file
+ * Template for all pages.
+ */
+#}
+<div class="page">
+  {% block pageNavigation %}
+    {% include "@BOOTSTRAP_STORYBOOK_SUBTHEME_MACHINE_NAME/section/navigation.twig" %}
+  {% endblock %}
+
+  <main class="pt-5 pb-5">
+    {% block pageMain %}
+      {% include "@BOOTSTRAP_STORYBOOK_SUBTHEME_MACHINE_NAME/section/header.twig" %}
+      {% include "@BOOTSTRAP_STORYBOOK_SUBTHEME_MACHINE_NAME/section/content.twig" %}
+    {% endblock %}
+  </main>
+
+  {% block pageFooter %}
+    {% include "@BOOTSTRAP_STORYBOOK_SUBTHEME_MACHINE_NAME/section/footer.twig" %}
+  {% endblock %}
+</div>

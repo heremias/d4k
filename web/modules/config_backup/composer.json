@@ -1,0 +1,20 @@
+{
+  "name": "drupal/config_backup",
+  "type": "drupal-module",
+  "description": "Config Backup allows easy make backups of the site configurations.",
+  "keywords": ["Drupal", "configuration", "configuration management"],
+  "authors": [
+    {
+      "name": "Pavlo Tyshchenko",
+      "homepage": "https://www.drupal.org/u/azovsky",
+      "role": "Maintainer"
+    }
+  ],
+  "homepage": "https://www.drupal.org/project/config_backup",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/config_backup",
+    "source": "https://git.drupalcode.org/project/config_backup"
+  },
+  "license": "GPL-2.0-or-later",
+  "require": {}
+}

@@ -1,0 +1,5 @@
+# Schema for the configuration files of the BOOM theme.
+
+boom.settings:
+  type: theme_settings
+  label: 'BOOM settings'

@@ -1,0 +1,6 @@
+services:
+  config_backup.commands:
+    class: \Drupal\config_backup\Commands\ConfigBackupCommands
+    arguments: ['@config_backup.service']
+    tags:
+      - { name: drush.command }

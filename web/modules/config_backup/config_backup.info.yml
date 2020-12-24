@@ -1,0 +1,14 @@
+core_version_requirement: ^8 || ^9
+core: 8.x
+description: Config Backup allows easy make backups of the site configurations.
+name: Config Backup
+package: Config
+type: module
+configure: config_backup.admin
+dependencies:
+  - drupal:config
+
+# Information added by Drupal.org packaging script on 2020-09-07
+version: '1.0.1'
+project: 'config_backup'
+datestamp: 1599482168

@@ -1,0 +1,61 @@
+{#
+/**
+ * @file
+ * Template for Card component.
+ *
+ * Available config:
+ * - title: the title
+ * - body: the summary text
+ * - image: the node image
+ * - link: the node link/path
+ * - linkText: the label of read more
+ * - linkStyle: the style of read more (any Bootstrap class) along with the following custom ones
+ *   - btn--navy
+ *   - link-arrow
+ * - orientation:
+ *   - horizontal: Horizontal Card View
+ *   - vertical: Vertical Card View
+ * - card_classes: An array of utility classes.
+ */
+#}
+{%
+  set card_classes = [
+  'd-flex',
+  'card',
+  orientation ? 'card--' ~ orientation,
+  column ? 'card--' ~ column ~ 'col',
+]
+%}
+
+{# Considers the description text to be shown by default #}
+{% set showDescription = showDescription ?? true %}
+
+<div{{ content_attributes.addClass(card_classes) }}>
+  {% if image|render %}
+    <div class="card__image card__child">
+      {{ image }}
+    </div>
+  {% endif %}
+
+  <div class="card__text card__child">
+    {% if showDate %}
+      <div class="card__date pb-1 mb-2">{{ node.published_at.0.value|date('j F Y') }}</div>
+    {% endif %}
+
+    <h3><a href="{{ link }}">{{ title }}</a></h3>
+
+    {% if showDescription %}
+      <div class="card__description">
+        {% autoescape false %}
+          {{ body }}
+        {% endautoescape %}
+      </div>
+    {% endif %}
+
+    {% if linkText %}
+      <a href="{{ link }}" class="card__link btn {{ linkStyle }}">{{ linkText }}</a>
+    {% endif %}
+  </div>
+</div>
+
+{{ attach_library('bootstrap_storybook/card') }}
