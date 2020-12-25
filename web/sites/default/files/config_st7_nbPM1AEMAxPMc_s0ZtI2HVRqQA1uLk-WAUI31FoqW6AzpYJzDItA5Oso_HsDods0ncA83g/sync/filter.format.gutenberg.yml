@@ -46,7 +46,7 @@ filters:
     status: true
     weight: 0
     settings:
-      enable_filter: '0'
+      enable_filter: '1'
   filter_media_entity_block:
     id: filter_media_entity_block
     provider: gutenberg
