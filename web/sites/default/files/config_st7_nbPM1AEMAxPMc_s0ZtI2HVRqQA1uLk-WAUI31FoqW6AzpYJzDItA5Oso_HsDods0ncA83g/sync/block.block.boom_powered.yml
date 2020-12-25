@@ -1,0 +1,22 @@
+uuid: 301a8b42-8d3d-403f-9ad3-45607db9f6fd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - boom
+_core:
+  default_config_hash: ygYOxNV388KKajE2oZsiM9hejoed0gu5WeXcLR_zfzM
+id: boom_powered
+theme: boom
+region: navbar_branding
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

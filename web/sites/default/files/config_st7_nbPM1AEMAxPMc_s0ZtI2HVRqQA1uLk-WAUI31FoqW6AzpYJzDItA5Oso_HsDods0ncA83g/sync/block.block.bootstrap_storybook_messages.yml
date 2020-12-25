@@ -1,0 +1,22 @@
+uuid: 5e4c1595-1fff-4a9b-be75-8053c8d8940e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_storybook
+_core:
+  default_config_hash: KfyaTPRJEcAyy2e5AxEfWQnuHcn4WrfvcWek7lSmHZQ
+id: bootstrap_storybook_messages
+theme: bootstrap_storybook
+region: navbar_branding
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

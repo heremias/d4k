@@ -1,0 +1,22 @@
+uuid: 4f19e625-745f-416d-a01c-f4edb1f06e9b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boom
+_core:
+  default_config_hash: ra6f6AXShbzKP9r6uPc9cfCx2KuomlPqmt1WWPUuDf0
+id: boom_primary_local_tasks
+theme: boom
+region: navbar_branding
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

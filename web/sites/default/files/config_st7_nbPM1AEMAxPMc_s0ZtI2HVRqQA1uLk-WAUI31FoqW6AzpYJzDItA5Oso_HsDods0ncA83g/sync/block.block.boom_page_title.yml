@@ -1,0 +1,20 @@
+uuid: 3a60948b-fa6b-46f3-bba7-cabe4cd72bfc
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boom
+_core:
+  default_config_hash: WImvmaBdDpwIqobqbDWebBnyxssRvrNEnZSQbOsvOe4
+id: boom_page_title
+theme: boom
+region: navbar_branding
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

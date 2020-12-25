@@ -1,0 +1,20 @@
+uuid: bdebff7a-4896-453c-ae14-8fa84734b2c1
+langcode: en
+status: true
+dependencies:
+  theme:
+    - boom
+_core:
+  default_config_hash: sBMSSrWtP58IZaz1i3-MJ9yq_y32w1nc7N5DZJmt-4M
+id: boom_primary_admin_actions
+theme: boom
+region: navbar_branding
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }
