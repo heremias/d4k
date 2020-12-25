@@ -79,3 +79,4 @@ post_allowed_drupal_blocks:
   system_branding_block: system_branding_block
   system_powered_by_block: 0
   node_syndicate_block: 0
+ckeditor_enable_full: 0

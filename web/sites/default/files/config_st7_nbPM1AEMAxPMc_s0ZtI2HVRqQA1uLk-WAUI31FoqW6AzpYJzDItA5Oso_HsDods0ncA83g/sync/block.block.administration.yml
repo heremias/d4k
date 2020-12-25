@@ -1,0 +1,25 @@
+uuid: bf1cd997-bede-489e-b470-50dc0274e722
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.admin
+  module:
+    - system
+  theme:
+    - olivero
+id: administration
+theme: olivero
+region: content_below
+weight: 0
+provider: null
+plugin: 'system_menu_block:admin'
+settings:
+  id: 'system_menu_block:admin'
+  label: Administration
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }

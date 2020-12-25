@@ -1,0 +1,10 @@
+name: Ckeditor Layoutmanager
+type: module
+description: 'Provides ckeditor layoutmanager plugin for wysiwyg editors.'
+package: CKEDITOR
+core_version_requirement: ^8 || ^9
+
+# Information added by Drupal.org packaging script on 2020-07-07
+version: '1.0.0-alpha1'
+project: 'ckeditor_layout_manager'
+datestamp: 1594141770

@@ -1,0 +1,18 @@
+uuid: 88a9d433-d6d2-46c5-a210-260bf90bedda
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: CKEditor
+type: ckeditor
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

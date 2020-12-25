@@ -32,17 +32,23 @@ settings:
           items:
             - Blockquote
             - DrupalImage
+            - DrupalMediaLibrary
         -
           name: Tools
           items:
+            - HorizontalRule
+            - ShowBlocks
             - Source
+            - Format
+            - Styles
+            - AddLayout
   plugins:
     language:
       language_list: un
     stylescombo:
       styles: ''
 image_upload:
-  status: false
+  status: true
   scheme: public
   directory: inline-images
   max_size: ''

@@ -1,0 +1,21 @@
+uuid: 2b58c787-7dd4-4878-8c43-1b9d50cd3f4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media
+    - node.type.post
+id: node.post.field_media
+field_name: field_media
+entity_type: node
+bundle: post
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference
