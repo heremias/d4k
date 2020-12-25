@@ -1,0 +1,11 @@
+uuid: b484e307-ea85-4a10-acd4-8508b5ca01a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.wide
+id: hero_image
+label: 'Hero Image'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: wide

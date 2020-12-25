@@ -2,8 +2,11 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  ckeditor: 0
+  color: 0
   components: 0
   config: 0
+  content_moderation: 0
   contextual: 0
   datetime: 0
   datetime_range: 0
@@ -11,11 +14,13 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
   gutenberg: 0
   image: 0
+  inline_form_errors: 0
   layout_builder: 0
   layout_discovery: 0
   link: 0
@@ -36,6 +41,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  workflows: 0
   views: 10
   minimal: 1000
 theme:

@@ -1,0 +1,11 @@
+uuid: ffbc8fde-a850-42d0-bd81-3185049ae73a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.media_library
+id: author_image
+label: 'Author Image'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: media_library

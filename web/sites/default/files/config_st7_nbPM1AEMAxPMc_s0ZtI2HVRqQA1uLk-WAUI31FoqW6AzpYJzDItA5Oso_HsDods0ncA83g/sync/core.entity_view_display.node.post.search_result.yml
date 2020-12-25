@@ -1,0 +1,36 @@
+uuid: ee5ba712-0c66-4330-a3a9-73db0e7169b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.post.body
+    - field.field.node.post.layout_builder__layout
+    - node.type.post
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.post.search_result
+targetEntityType: node
+bundle: post
+mode: search_result
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  layout_builder__layout: true
