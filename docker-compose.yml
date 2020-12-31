@@ -3,8 +3,8 @@ version: '3'
 
 services:
   drupal:
-    image: heremias/drupal-for-kubernetes:latest
-    container_name: drupal-for-kubernetes
+    image: heremias/d4k:latest
+    container_name: d4k
     environment:
       DRUPAL_DATABASE_HOST: 'mysql'
       DRUPAL_DATABASE_PORT: '3306'
