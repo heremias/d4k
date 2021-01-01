@@ -25,7 +25,7 @@ COPY --from=vendor /app/ /var/www/html/
 # Copy other required configuration into the container.
 COPY config/ /var/www/html/config/
 COPY load.environment.php /var/www/html/load.environment.php
-COPY pidramble.settings.php /var/www/html/web/sites/default/settings.php
+COPY d4k.settings.php /var/www/html/web/sites/default/settings.php
 
 # Make sure file ownership is correct on the document root.
 RUN chown -R www-data:www-data /var/www/html/web
