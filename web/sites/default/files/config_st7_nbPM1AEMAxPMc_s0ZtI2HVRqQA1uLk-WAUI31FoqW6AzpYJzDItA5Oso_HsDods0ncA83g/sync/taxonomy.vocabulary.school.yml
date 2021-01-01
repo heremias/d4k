@@ -1,0 +1,8 @@
+uuid: cd8fef4f-795b-435d-a427-495019cf7fac
+langcode: en
+status: true
+dependencies: {  }
+name: School
+vid: school
+description: ''
+weight: 0

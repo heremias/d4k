@@ -1,0 +1,14 @@
+uuid: 47858a1d-4f91-4516-ba1c-41e1addf746e
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.super
+  module:
+    - user
+id: user_add_role_action.super
+label: 'Add the Super role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: super

@@ -1,0 +1,11 @@
+uuid: fee80669-71d7-4705-b0b0-96d5b383cadb
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.department
+id: taxonomy_term.department
+target_entity_type_id: taxonomy_term
+target_bundle: department
+default_langcode: site_default
+language_alterable: false

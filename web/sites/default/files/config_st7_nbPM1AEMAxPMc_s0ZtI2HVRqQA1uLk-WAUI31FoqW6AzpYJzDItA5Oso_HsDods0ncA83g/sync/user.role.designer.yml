@@ -1,0 +1,9 @@
+uuid: 420def53-b3bc-4c8b-b18d-13531dae132e
+langcode: en
+status: true
+dependencies: {  }
+id: designer
+label: Designer
+weight: -5
+is_admin: null
+permissions: {  }
