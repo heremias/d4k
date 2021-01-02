@@ -1,33 +1,22 @@
-name: PHP Composer
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+name: CI Build
+on: [push]
 
 jobs:
   build:
-
+    name: Build
     runs-on: ubuntu-latest
-
+    container:
+      image: php:7.3-apache
+      env:
+        NODE_ENV: production
+      ports:
+      - 80
+      volumes:
+      - $GITHUB_WORKSPACE:/var/www/html
     steps:
-    - uses: actions/checkout@v2
-    - name: Validate composer.json and composer.lock
-      run: composer validate
+    - name: Checkout Repository
+      uses: actions/checkout@v1
 
-    - name: Cache Composer packages
-      id: composer-cache
-      uses: actions/cache@v2
-      with:
-        php-version: '7.4'
-
-    - name: Install dependencies
-      if: steps.composer-cache.outputs.cache-hit != 'true'
-      run: composer install --prefer-dist --no-progress
-
-    # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
-    # Docs: https://getcomposer.org/doc/articles/scripts.md
-
-    # - name: Run test suite
-    #   run: composer run-script test
+    - name: Show files
+      run: |
+        ls -la
