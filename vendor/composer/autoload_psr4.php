@@ -64,7 +64,6 @@ return array(
     'Grasmash\\Expander\\' => array($vendorDir . '/grasmash/expander/src'),
     'Egulias\\EmailValidator\\' => array($vendorDir . '/egulias/email-validator/src'),
     'Drush\\Internal\\' => array($vendorDir . '/drush/drush/src/internal-forks'),
-    'Drush\\Commands\\bootstrap_storybook\\' => array($baseDir . '/web/themes/contrib/bootstrap_storybook/Commands/bootstrap_storybook'),
     'Drush\\' => array($vendorDir . '/drush/drush/src'),
     'Drupal\\Driver\\' => array($baseDir . '/web/drivers/lib/Drupal/Driver'),
     'Drupal\\Core\\' => array($baseDir . '/web/core/lib/Drupal/Core'),

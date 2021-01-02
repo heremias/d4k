@@ -136,7 +136,6 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         'D' => 
         array (
             'Drush\\Internal\\' => 15,
-            'Drush\\Commands\\bootstrap_storybook\\' => 35,
             'Drush\\' => 6,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
@@ -399,10 +398,6 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         'Drush\\Internal\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src/internal-forks',
-        ),
-        'Drush\\Commands\\bootstrap_storybook\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/web/themes/contrib/bootstrap_storybook/Commands/bootstrap_storybook',
         ),
         'Drush\\' => 
         array (
