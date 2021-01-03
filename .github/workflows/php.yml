@@ -24,8 +24,6 @@ jobs:
         run: composer install --prefer-dist --no-interaction --no-suggest
       - name: Install NPM dependencies
         run: npm install
-      - name: Execute tests
-        run: vendor/bin/phpunit --verbose
       - name: Deploy
         if: github.ref == 'refs/heads/master'
         run: curl ${{ secrets.ENVOYER_HOOK }}?sha=${{ github.sha }}
