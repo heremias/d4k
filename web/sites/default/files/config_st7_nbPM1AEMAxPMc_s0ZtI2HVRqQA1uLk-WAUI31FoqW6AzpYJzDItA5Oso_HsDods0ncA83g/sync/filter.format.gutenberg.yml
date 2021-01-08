@@ -2,6 +2,8 @@ uuid: 6f56fd03-c7b3-4d9c-8df7-3540f2e2f15b
 langcode: en
 status: true
 dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
   enforced:
     module:
       - gutenberg
@@ -65,6 +67,6 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: default
+      default_view_mode: media_library
       allowed_media_types: {  }
       allowed_view_modes: {  }

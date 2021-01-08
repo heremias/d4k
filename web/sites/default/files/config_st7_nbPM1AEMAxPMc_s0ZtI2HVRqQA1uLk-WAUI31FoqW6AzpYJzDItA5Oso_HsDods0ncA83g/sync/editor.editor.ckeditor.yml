@@ -16,23 +16,43 @@ settings:
           name: Formatting
           items:
             - Bold
+            - Underline
+            - Superscript
+            - Subscript
+            - RemoveFormat
+            - Strike
             - Italic
+            - Undo
+            - Redo
         -
           name: Links
           items:
+            - Cut
+            - Copy
+            - PasteText
+            - PasteFromWord
+            - Paste
             - DrupalLink
             - DrupalUnlink
+            - SpecialChar
         -
           name: Lists
           items:
             - BulletedList
             - NumberedList
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
+            - Indent
+            - Outdent
         -
           name: Media
           items:
             - Blockquote
             - DrupalImage
             - DrupalMediaLibrary
+            - Table
         -
           name: Tools
           items:
@@ -41,12 +61,13 @@ settings:
             - Source
             - Format
             - Styles
-            - AddLayout
+            - Maximize
+            - Language
   plugins:
     language:
       language_list: un
     stylescombo:
-      styles: ''
+      styles: 'h1.fancy.title|Fancy title'
 image_upload:
   status: true
   scheme: public
