@@ -1,0 +1,30 @@
+uuid: b4481dac-9b2d-4f9b-a38f-98e15c81b73b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.cke.body
+    - node.type.cke
+  module:
+    - text
+    - user
+id: node.cke.default
+targetEntityType: node
+bundle: cke
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

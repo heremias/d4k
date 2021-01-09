@@ -7,7 +7,7 @@ dependencies:
   module:
     - gutenberg
     - media
-name: CKEditor
+name: N1ED
 format: ckeditor
 weight: 0
 filters:

@@ -80,3 +80,5 @@ post_allowed_drupal_blocks:
   system_powered_by_block: 0
   node_syndicate_block: 0
 ckeditor_enable_full: 0
+basic_enable_full: 0
+cke_enable_full: 0

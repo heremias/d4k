@@ -1,0 +1,11 @@
+uuid: c63cbe7d-8c0f-45f1-a4c5-cc6199f11df6
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.cke
+id: node.cke
+target_entity_type_id: node
+target_bundle: cke
+default_langcode: site_default
+language_alterable: false

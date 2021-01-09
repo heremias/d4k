@@ -1,4 +1,4 @@
-colormap: summer
+colormap: cubehelix
 alpha: 40
 shades: 15
 _core:

@@ -1,0 +1,54 @@
+uuid: ddcb621d-216c-4cd3-81ce-df9c579aacaf
+langcode: en
+status: true
+dependencies: {  }
+id: dashboard
+admin_label: Dashboard
+category: ''
+sections:
+  -
+    layout_id: layout_2
+    layout_settings:
+      label: Dashboard
+    components:
+      e1114fec-3e4a-4fc1-994f-c273f4da049b:
+        uuid: e1114fec-3e4a-4fc1-994f-c273f4da049b
+        region: one
+        configuration:
+          id: 'system_menu_block:tools'
+          label: Tools
+          provider: system
+          label_display: visible
+          level: 1
+          depth: 0
+          expand_all_items: false
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      02498755-fb54-4e5c-955e-08225068b51a:
+        uuid: 02498755-fb54-4e5c-955e-08225068b51a
+        region: two
+        configuration:
+          id: 'single_file_component_block:example_block'
+          label: 'Blog Component Block'
+          provider: sfc_example
+          label_display: visible
+          component_context: {  }
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+      cbfe83f1-8959-4256-84cb-a7f5317a3692:
+        uuid: cbfe83f1-8959-4256-84cb-a7f5317a3692
+        region: three
+        configuration:
+          id: 'dashboards_block:dashboard:view_embed'
+          label: 'Embed a view'
+          provider: dashboards
+          label_display: visible
+          view: 'dashboard_last_content:embed_2'
+          context_mapping: {  }
+        additional: {  }
+        weight: 0
+    third_party_settings: {  }
+frontend: false
+weight: 0
