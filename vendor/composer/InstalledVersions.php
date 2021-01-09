@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'e866576771e7f5ffd69c0b8bcacd0b1410754848',
+    'reference' => '380e22626ed5b52e2c1f5a51c3828cb352d9c4c4',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -43,6 +43,15 @@ private static $installed = array (
       ),
       'reference' => 'b9c31def6a83f84b4d4a40d35996d375755f0e08',
     ),
+    'aws/aws-sdk-php' => 
+    array (
+      'pretty_version' => '3.171.14',
+      'version' => '3.171.14.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2bc8681a623caa13d5c1da90ca4d6c76436b545d',
+    ),
     'chi-teck/drupal-code-generator' => 
     array (
       'pretty_version' => '1.33.1',
@@ -51,6 +60,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '5f814e980b6f9cf1ca8c74cc9385c3d81090d388',
+    ),
+    'clue/stream-filter' => 
+    array (
+      'pretty_version' => 'v1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'aeb7d8ea49c7963d3b581378955dbf5bc49aa320',
     ),
     'composer/installers' => 
     array (
@@ -167,6 +185,15 @@ private static $installed = array (
         0 => '^1.2',
       ),
     ),
+    'davedevelopment/stiphle' => 
+    array (
+      'pretty_version' => '0.9.2',
+      'version' => '0.9.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '76151e6474741adee258c1a4860a0460e319563b',
+    ),
     'dflydev/dot-access-data' => 
     array (
       'pretty_version' => 'v1.1.0',
@@ -247,6 +274,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/advagg' => 
+    array (
+      'pretty_version' => '4.1.0',
+      'version' => '4.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-4.1',
+    ),
     'drupal/aggregator' => 
     array (
       'replaced' => 
@@ -260,6 +296,25 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/aws_cloudwatchlogs' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0',
+    ),
+    'drupal/aws_secrets_manager' => 
+    array (
+      'pretty_version' => 'dev-2.x',
+      'version' => 'dev-2.x',
+      'aliases' => 
+      array (
+        0 => '2.x-dev',
+      ),
+      'reference' => '6768e1502df5b7a88bb6d0377adbc05b37a9c156',
     ),
     'drupal/ban' => 
     array (
@@ -281,6 +336,16 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/better_exposed_filters' => 
+    array (
+      'pretty_version' => 'dev-5.x',
+      'version' => 'dev-5.x',
+      'aliases' => 
+      array (
+        0 => '5.x-dev',
+      ),
+      'reference' => '324bb4ebc25acf3eceb38cbdb6133bd6176edcd7',
     ),
     'drupal/big_pipe' => 
     array (
@@ -319,12 +384,48 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/bootstrap' => 
+    array (
+      'pretty_version' => '3.23.0',
+      'version' => '3.23.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.23',
+    ),
+    'drupal/bootstrap_cloud' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.3',
+    ),
     'drupal/breakpoint' => 
     array (
       'replaced' => 
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/cas' => 
+    array (
+      'pretty_version' => '1.7.0',
+      'version' => '1.7.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.7',
+    ),
+    'drupal/cdn' => 
+    array (
+      'pretty_version' => '3.5.0',
+      'version' => '3.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.5',
     ),
     'drupal/ckeditor' => 
     array (
@@ -384,6 +485,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/cloud' => 
+    array (
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.0',
+    ),
     'drupal/codesnippet' => 
     array (
       'pretty_version' => '1.7.0',
@@ -392,6 +502,16 @@ private static $installed = array (
       array (
       ),
       'reference' => '8.x-1.7',
+    ),
+    'drupal/cognito' => 
+    array (
+      'pretty_version' => 'dev-1.x',
+      'version' => 'dev-1.x',
+      'aliases' => 
+      array (
+        0 => '1.x-dev',
+      ),
+      'reference' => 'a8bb6816f54854c7ed8fe43bb668dcadf038a3dc',
     ),
     'drupal/color' => 
     array (
@@ -732,6 +852,25 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.4',
     ),
+    'drupal/encrypt' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.0',
+    ),
+    'drupal/encrypt_kms' => 
+    array (
+      'pretty_version' => 'dev-1.x',
+      'version' => 'dev-1.x',
+      'aliases' => 
+      array (
+        0 => '1.x-dev',
+      ),
+      'reference' => '043d0ea256811d480e93c0fc7fb0ee7d5992de8c',
+    ),
     'drupal/entity_browser' => 
     array (
       'pretty_version' => '2.5.0',
@@ -765,6 +904,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3.0.0',
+    ),
+    'drupal/externalauth' => 
+    array (
+      'pretty_version' => '1.3.0',
+      'version' => '1.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.3',
     ),
     'drupal/facets' => 
     array (
@@ -835,6 +983,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/geocoder' => 
+    array (
+      'pretty_version' => '3.14.0',
+      'version' => '3.14.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.14',
+    ),
     'drupal/gutenberg' => 
     array (
       'pretty_version' => '1.11.0',
@@ -895,12 +1052,57 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/jquery_ui' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.4',
+    ),
+    'drupal/jquery_ui_datepicker' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.0',
+    ),
+    'drupal/jquery_ui_slider' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.1',
+    ),
+    'drupal/jquery_ui_touch_punch' => 
+    array (
+      'pretty_version' => '1.0.0',
+      'version' => '1.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1.0.0',
+    ),
     'drupal/jsonapi' => 
     array (
       'replaced' => 
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/key' => 
+    array (
+      'pretty_version' => '1.14.0',
+      'version' => '1.14.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.14',
     ),
     'drupal/language' => 
     array (
@@ -1065,6 +1267,15 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/oauth_login_oauth2' => 
+    array (
+      'pretty_version' => '1.222.0',
+      'version' => '1.222.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.222',
+    ),
     'drupal/olivero' => 
     array (
       'replaced' => 
@@ -1130,7 +1341,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'e866576771e7f5ffd69c0b8bcacd0b1410754848',
+      'reference' => '380e22626ed5b52e2c1f5a51c3828cb352d9c4c4',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1145,6 +1356,16 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/s3fs' => 
+    array (
+      'pretty_version' => 'dev-3.x',
+      'version' => 'dev-3.x',
+      'aliases' => 
+      array (
+        0 => '3.x-dev',
+      ),
+      'reference' => 'ba616250e5926de8476ee579cbbc5f09e1047593',
     ),
     'drupal/search' => 
     array (
@@ -1226,6 +1447,16 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.3',
     ),
+    'drupal/smsframework' => 
+    array (
+      'pretty_version' => 'dev-2.x',
+      'version' => 'dev-2.x',
+      'aliases' => 
+      array (
+        0 => '2.x-dev',
+      ),
+      'reference' => '13d243e3ecb91723e90b13e80197898eec31119c',
+    ),
     'drupal/split_preview' => 
     array (
       'pretty_version' => '1.0.0',
@@ -1248,6 +1479,16 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/static_suite' => 
+    array (
+      'pretty_version' => 'dev-1.0.x',
+      'version' => 'dev-1.0.x',
+      'aliases' => 
+      array (
+        0 => '1.0.x-dev',
+      ),
+      'reference' => '6c72bf2222dd67385afdd75abe4882f656ecd963',
     ),
     'drupal/statistics' => 
     array (
@@ -1400,6 +1641,67 @@ private static $installed = array (
       ),
       'reference' => '68e418ec08fbfc6f58f6fd2eea70ca8efc8cc7d5',
     ),
+    'firebase/php-jwt' => 
+    array (
+      'pretty_version' => 'v5.2.0',
+      'version' => '5.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'feb0e820b8436873675fd3aca04f3728eb2185cb',
+    ),
+    'geocoder-php/common-http' => 
+    array (
+      'pretty_version' => '4.4.0',
+      'version' => '4.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '9f44a006d4b45d01dd31ea9b38ee7fb5724cd73e',
+    ),
+    'geocoder-php/nominatim-provider' => 
+    array (
+      'pretty_version' => '5.4.0',
+      'version' => '5.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '80f39ce41bcd0e4d9de3e83c40caf92d089fecf2',
+    ),
+    'geocoder-php/provider-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'google/apiclient' => 
+    array (
+      'pretty_version' => 'v2.8.3',
+      'version' => '2.8.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '81696e6206322e38c643cfcc96c4494ccfef8a32',
+    ),
+    'google/apiclient-services' => 
+    array (
+      'pretty_version' => 'v0.156',
+      'version' => '0.156.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2f5e54fdef034f856208328126bddd8376dae4b3',
+    ),
+    'google/auth' => 
+    array (
+      'pretty_version' => 'v1.14.3',
+      'version' => '1.14.3.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c1503299c779af0cbc99b43788f75930988852cf',
+    ),
     'grasmash/expander' => 
     array (
       'pretty_version' => '1.0.0',
@@ -1417,6 +1719,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3f0f6001ae707a24f4d9733958d77d92bf9693b1',
+    ),
+    'gree/jose' => 
+    array (
+      'pretty_version' => '2.2.1',
+      'version' => '2.2.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '445d702ffc8b17abd22d664b334a4046a0ed0b8e',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -1508,6 +1819,24 @@ private static $installed = array (
       ),
       'reference' => '9227822783c75406cfe400984b2f095cdf03d417',
     ),
+    'monolog/monolog' => 
+    array (
+      'pretty_version' => '2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1cb1cde8e8dd0f70cc0fe51354a59acad9302084',
+    ),
+    'mtdowling/jmespath.php' => 
+    array (
+      'pretty_version' => '2.6.0',
+      'version' => '2.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '42dae2cbd13154083ca6d70099692fef8ca84bfb',
+    ),
     'myclabs/deep-copy' => 
     array (
       'pretty_version' => '1.10.2',
@@ -1591,6 +1920,81 @@ private static $installed = array (
       ),
       'reference' => 'e4782611070e50613683d2b9a57730e9a3ba5451',
     ),
+    'php-http/async-client-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'php-http/client-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'php-http/discovery' => 
+    array (
+      'pretty_version' => '1.13.0',
+      'version' => '1.13.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '788f72d64c43dc361e7fcc7464c3d947c64984a7',
+    ),
+    'php-http/guzzle6-adapter' => 
+    array (
+      'pretty_version' => 'v2.0.1',
+      'version' => '2.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6074a4b1f4d5c21061b70bab3b8ad484282fe31f',
+    ),
+    'php-http/httplug' => 
+    array (
+      'pretty_version' => '2.2.0',
+      'version' => '2.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '191a0a1b41ed026b717421931f8d3bd2514ffbf9',
+    ),
+    'php-http/message' => 
+    array (
+      'pretty_version' => '1.10.0',
+      'version' => '1.10.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '39db36d5972e9e6d00ea852b650953f928d8f10d',
+    ),
+    'php-http/message-factory' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a478cb11f66a6ac48d8954216cfed9aa06a501a1',
+    ),
+    'php-http/message-factory-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'php-http/promise' => 
+    array (
+      'pretty_version' => '1.1.0',
+      'version' => '1.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4c4c1f9b7289a2ec57cde7f1e9762a5789506f88',
+    ),
     'phpdocumentor/reflection-common' => 
     array (
       'pretty_version' => '2.2.0',
@@ -1617,6 +2021,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '6a467b8989322d92aa1c8bf2bebcc6e5c2ba55c0',
+    ),
+    'phpseclib/phpseclib' => 
+    array (
+      'pretty_version' => '2.0.30',
+      'version' => '2.0.30.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '136b9ca7eebef78be14abf90d65c5e57b6bc5d36',
     ),
     'phpspec/prophecy' => 
     array (
@@ -1681,6 +2094,15 @@ private static $installed = array (
       ),
       'reference' => '8e16c225d57c3d6808014df6b1dd7598d0a5bbbe',
     ),
+    'psr/cache' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+    ),
     'psr/container' => 
     array (
       'pretty_version' => '1.0.0',
@@ -1699,6 +2121,22 @@ private static $installed = array (
       ),
     ),
     'psr/event-dispatcher-implementation' => 
+    array (
+      'provided' => 
+      array (
+        0 => '1.0',
+      ),
+    ),
+    'psr/http-client' => 
+    array (
+      'pretty_version' => '1.0.1',
+      'version' => '1.0.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
+    ),
+    'psr/http-client-implementation' => 
     array (
       'provided' => 
       array (
@@ -1750,7 +2188,8 @@ private static $installed = array (
     array (
       'provided' => 
       array (
-        0 => '1.0',
+        0 => '1.0.0',
+        1 => '1.0',
       ),
     ),
     'psy/psysh' => 
@@ -2298,6 +2737,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'd939f7edc24c9a1bb9c0dee5cb05d8e859490725',
+    ),
+    'willdurand/geocoder' => 
+    array (
+      'pretty_version' => '4.4.0',
+      'version' => '4.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3e86f5b10ab0cef1cf03f979fe8e34b6476daff0',
     ),
     'zendframework/zend-diactoros' => 
     array (

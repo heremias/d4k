@@ -1,0 +1,297 @@
+/* Font Size */
+body.extra_small_text {
+  font-size: x-small;
+}
+
+body.small_text {
+  font-size: small;
+}
+
+body.medium_text {
+  font-size: medium;
+}
+
+body.large_text {
+  font-size: large;
+}
+
+body.extra_large_text {
+  font-size: x-large;
+}
+
+/* Text resize for header*/
+body.extra_small_text header {
+  font-size: small;
+}
+
+body.small_text header {
+  font-size: medium;
+}
+
+body.medium_text header {
+  font-size: large;
+}
+
+body.large_text header {
+  font-size: x-large;
+}
+
+body.extra_large_text header {
+  font-size: xx-large;
+}
+
+/* Text resize for page title*/
+body.extra_small_text h1 {
+  font-size: medium;
+}
+
+body.small_text h1 {
+  font-size: large;
+}
+
+body.medium_text h1 {
+  font-size: x-large;
+}
+
+body.large_text h1 {
+  font-size: xx-large;
+}
+
+body.extra_large_text h1 {
+  font-size: 40px;
+}
+
+/* Text resize for button and it's icon */
+body.extra_small_text .btn {
+  font-size: 9px;
+}
+
+body.small_text .btn {
+  font-size: x-small;
+}
+
+body.medium_text .btn {
+  font-size: small;
+}
+
+body.large_text .btn {
+  font-size: medium;
+}
+
+body.extra_large_text .btn {
+  font-size: large;
+}
+
+body.extra_small_text .caret {
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+}
+
+body.small_text .caret {
+  border-top-width: 3px;
+  border-right-width: 3px;
+  border-left-width: 3px;
+}
+
+body.medium_text .caret {
+  border-top-width: 4px;
+  border-right-width: 4px;
+  border-left-width: 4px;
+}
+
+body.large_text .caret {
+  border-top-width: 6px;
+  border-right-width: 6px;
+  border-left-width: 6px;
+}
+
+body.extra_large_text .caret {
+  border-top-width: 8px;
+  border-right-width: 8px;
+  border-left-width: 8px;
+}
+
+/* Text resize for select */
+.view-content .views-form #edit-header .form-group,
+.view-filters .form-group {
+  vertical-align: top;
+}
+body .view-content .views-form select option,
+body select option {
+  font-size: inherit;
+}
+
+body.extra_small_text .view-content .views-form select,
+body.extra_small_text table.select2-results,
+body.extra_small_text .select2-container--default .select2-results__option[aria-selected=true],
+body.extra_small_text .select2-container .select2-selection--single .select2-selection__rendered,
+body.extra_small_text .select2-container--default .select2-search--dropdown .select2-search__field,
+body.extra_small_text .select2-dropdown,
+body.extra_small_text .form-control {
+  font-size: 9px;
+  height: auto;
+  line-height: 1.42857143;
+}
+
+body.small_text .view-content .views-form select,
+body.small_text table.select2-results,
+body.small_text .select2-container--default .select2-results__option[aria-selected=true],
+body.small_text .select2-container .select2-selection--single .select2-selection__rendered,
+body.small_text .select2-container--default .select2-search--dropdown .select2-search__field,
+body.small_text .select2-dropdown,
+body.small_text .form-control {
+  font-size: x-small;
+  height: auto;
+  line-height: 1.42857143;
+}
+
+body.medium_text .view-content .views-form select,
+body.medium_text table.select2-results,
+body.medium_text .select2-container--default .select2-results__option[aria-selected=true],
+body.medium_text .select2-container .select2-selection--single .select2-selection__rendered,
+body.medium_text .select2-container--default .select2-search--dropdown .select2-search__field,
+body.medium_text .select2-dropdown,
+body.medium_text .form-control {
+  font-size: small;
+  height: auto;
+  line-height: 1.42857143;
+}
+
+body.large_text .view-content .views-form select,
+body.large_text table.select2-results,
+body.large_text .select2-container--default .select2-results__option[aria-selected=true],
+body.large_text .select2-container .select2-selection--single .select2-selection__rendered,
+body.large_text .select2-container--default .select2-search--dropdown .select2-search__field,
+body.large_text .select2-dropdown,
+body.large_text .form-control {
+  font-size: medium;
+  height: auto;
+  line-height: 1.42857143;
+}
+
+body.extra_large_text .view-content .views-form select,
+body.extra_large_text table.select2-results,
+body.extra_large_text .select2-container--default .select2-results__option[aria-selected=true],
+body.extra_large_text .select2-container .select2-selection--single .select2-selection__rendered,
+body.extra_large_text .select2-container--default .select2-search--dropdown .select2-search__field,
+body.extra_large_text .select2-dropdown,
+body.extra_large_text .form-control {
+  font-size: large;
+  height: auto;
+  line-height: 1.42857143;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding: 6px 12px;
+}
+.select2-container .select2-selection--single {
+  height: auto;
+}
+
+/* Change size of checkbox and radio button */
+body.extra_small_text input[type="radio"],
+body.extra_small_text input[type="checkbox"] {
+  height: 11px;
+  width: 11px;
+  margin-left: -15px;
+}
+
+body.extra_small_text .radio label,
+body.extra_small_text .checkbox label {
+  min-height: 11px;
+  padding-left: 11px;
+}
+
+body.extra_small_text td .checkbox label {
+  padding-top: 0;
+}
+
+body.small_text input[type="radio"],
+body.small_text input[type="checkbox"] {
+  height: 14px;
+  width: 14px;
+}
+
+body.small_text .radio label,
+body.small_text .checkbox label {
+  min-height: 14px;
+}
+
+body.small_text td .checkbox label {
+  padding-top: 0;
+}
+
+body.medium_text input[type="radio"],
+body.medium_text input[type="checkbox"] {
+  height: 17px;
+  width: 17px;
+}
+
+body.medium_text .radio label,
+body.medium_text .checkbox label {
+  min-height: 17px;
+}
+
+body.medium_text td .checkbox label {
+  padding-top: 0;
+}
+
+body.large_text input[type="radio"],
+body.large_text input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  margin-left: -25px;
+}
+
+body.large_text .radio label,
+body.large_text .checkbox label {
+  min-height: 20px;
+  padding-left: 25px;
+}
+
+body.large_text td .checkbox label {
+  padding-top: 0;
+}
+
+body.extra_large_text input[type="radio"],
+body.extra_large_text input[type="checkbox"] {
+  height: 23px;
+  width: 23px;
+  margin-left: -30px;
+}
+
+body.extra_large_text .radio label,
+body.extra_large_text .checkbox label {
+  min-height: 23px;
+  padding-left: 30px;
+}
+
+body.extra_large_text td .checkbox label {
+  padding-top: 0;
+}
+
+/* Panel title */
+body.extra_small_text .panel-title {
+  font-size: small;
+}
+
+body.small_text .panel-title {
+  font-size: medium;
+}
+
+body.medium_text .panel-title {
+  font-size: large;
+}
+
+body.large_text .panel-title {
+  font-size: x-large;
+}
+
+body.extra_large_text .panel-title {
+  font-size: xx-large;
+}
+
+#bootstrap-panel--content svg[preserveAspectRatio = "xMidYMid"] {
+  max-width: 600px;
+}

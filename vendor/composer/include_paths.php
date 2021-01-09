@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    $vendorDir . '/gree/jose/src',
     $vendorDir . '/pear/archive_tar',
     $vendorDir . '/pear/console_getopt',
     $vendorDir . '/pear/pear-core-minimal/src',

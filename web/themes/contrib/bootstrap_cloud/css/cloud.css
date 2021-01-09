@@ -1,0 +1,361 @@
+/* csslint float: false, box-sizing: false */
+
+.delete_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_delete.png) no-repeat;
+}
+
+.delete_icon a:hover {
+  background-position: -50px 0;
+}
+.stop_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_action_stop.png) no-repeat;
+}
+
+.stop_icon a:hover {
+  background-position: -50px 0;
+}
+
+.play_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_play.png) no-repeat;
+}
+
+.play_icon a:hover {
+  background-position: -50px 0;
+}
+
+.launch_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 16px;
+  height: 16px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_launch.png) no-repeat;
+}
+
+.launch_icon a:hover {
+  background-position: 0 -16px;
+}
+
+.copy_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_copy.png) no-repeat;
+}
+
+.copy_icon a:hover {
+  background-position: -50px 0;
+}
+
+.down_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_failover_down.png) no-repeat;
+}
+
+.down_icon a:hover {
+  background-position: -50px 0;
+}
+
+.servicedown_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_failover_service_down.png) no-repeat;
+}
+
+.servicedown_icon a:hover {
+  background-position: -50px 0;
+}
+
+.failup_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_failover_up.png) no-repeat;
+}
+
+.failup_icon a:hover {
+  background-position: -50px 0;
+}
+
+.edit_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  text-indent: -9999px;
+  direction: ltr;
+  background: transparent url(../images/icon_edit.png) no-repeat;
+}
+
+.edit_icon a:hover {
+  background-position: -50px 0;
+}
+
+.monitor_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_monitor.png) no-repeat;
+}
+
+.monitor_icon a:hover {
+  background-position: -50px 0;
+}
+
+.icon_monitor_gray a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_monitor_gray.png) no-repeat;
+}
+
+.icon_monitor_gray a:hover {
+  background-position: -50px 0;
+}
+
+.monitor_green_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_monitor_green.png) no-repeat;
+}
+
+.monitor_green_icon a:hover {
+  background-position: -50px 0;
+}
+
+.monitor_stop_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  background: transparent url(../images/icon_monitor_stop.png) no-repeat;
+}
+
+.reboot_icon a:hover {
+  background-position: -50px 0;
+}
+
+.reboot_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  text-indent: -9999px;
+  direction: ltr;
+  background: transparent url(../images/icon_reboot.png) no-repeat;
+}
+.monitor_stop_icon a:hover {
+  background-position: -50px 0;
+}
+
+.lock_icon {
+  margin: 1px 1px 1px 3px; /* !important; */
+  padding: 1px 1px 2px 1px;
+  width: 18px;
+  height: 17px;
+  background: transparent url(../images/icon_padlock.png) no-repeat;
+  cursor: default;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.lock_icon:hover {
+  text-decoration: none;
+  background-position: -50px 0;
+}
+
+.lock_icon_h {
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  /* background: transparent url(../images/icon_padlock.png) no-repeat; */
+  background-position: -50px 0;
+  cursor: default;
+}
+
+.ssh_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_ssh.png) no-repeat;
+}
+
+.ssh_icon a:hover {
+  background-position: -50px 0;
+}
+
+.table_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_table_inputs.png) no-repeat;
+}
+
+.table_icon a:hover {
+  background-position: -50px 0;
+}
+
+.shutdown_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_hardshutdown.png) no-repeat;
+}
+
+.shutdown_icon a:hover {
+  background-position: -50px 0;
+}
+
+.resume_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_resume.png) no-repeat;
+}
+
+.resume_icon a:hover {
+  background-position: -50px 0;
+}
+
+.suspend_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_suspend.png) no-repeat;
+}
+
+.suspend_icon a:hover {
+  background-position: -50px 0;
+}
+
+.hardreboot_icon a {
+  display: block;
+  float: left;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  direction: ltr;
+  text-indent: -9999px;
+  background: transparent url(../images/icon_hardreboot.png) no-repeat;
+}
+
+.hardreboot_icon a:hover {
+  background-position: -50px 0;
+}
+
+table.hide-action-column tr {
+  overflow: visible;
+}
+
+.sticky-header th.action-column {
+  display: none;
+}
+
+table.hide-action-column .action-column {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100px;
+  z-index: 99;
+  background-color: #edf5fa;
+  border-top: 1px solid #edf5fa;
+  border-right: 1px solid #d3e7f4;
+  border-bottom: 1px solid #d3e7f4;
+  border-left: 1px solid #d3e7f4;
+  -moz-box-shadow: 0 1px 1px #bbb;
+  -webkit-box-shadow: 0 1px 1px #bbb;
+  box-shadow: 0 1px 1px #bbb;
+  /* csslint box-sizing: false */
+  box-sizing: border-box;
+}
+
+table.hide-action-column .even .action-column {
+  border-top: 1px solid #fff;
+  background-color: #fff;
+}
+
+table.hide-action-column .nickname-column a {
+  display: block;
+  white-space: nowrap;
+  float: left;
+}
+
+.action_toggle_icon {
+  background: transparent url('../images/icon_action_toggle_arrow_sprite.png') -50px 0 no-repeat;
+  float: left;
+  display: block;
+  height: 16px;
+  width: 16px;
+  margin: 2px 5px 0 0;
+  overflow: hidden;
+}
+
+.action_toggle_icon_on {
+  background-position: 0 0;
+}

@@ -1,0 +1,27 @@
+uuid: 23037de2-449c-4083-a52c-0fa7663dc1c8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - bootstrap_cloud
+_core:
+  default_config_hash: mLtFcFoBKjNa1bK4l8koQxJ5dmjSGBYg5IEiv30I6pQ
+id: bootstrap_cloud_tools
+theme: bootstrap_cloud
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Tools
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

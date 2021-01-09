@@ -1,0 +1,18 @@
+# VMware Routing Definition
+
+# VMware Admin Settings
+vmware.settings:
+  path: '/admin/config/services/cloud/vmware'
+  defaults:
+    _entity_list: 'cloud_config'
+    _title: VMware
+  requirements:
+    _permission: 'administer vmware'
+
+vmware.settings.options:
+  path: '/admin/config/services/cloud/vmware/settings'
+  defaults:
+    _title: VMware
+    _form: '\Drupal\vmware\Form\Config\VmwareAdminSettings'
+  requirements:
+    _permission: 'administer vmware'

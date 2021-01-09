@@ -1,0 +1,16 @@
+aws_cloudwatchlogs administer settings:
+    title: 'Administer Settings'
+    description: 'Administer AWS Cloudwatch Logs settings.'
+    restrict access: TRUE
+aws_cloudwatchlogs access create_log_group:
+    title: 'Access Create Log Group Form'
+aws_cloudwatchlogs access create_log_stream:
+    title: 'Access Create Log Stream Form'
+aws_cloudwatchlogs access delete_log_group:
+    title: 'Access Delete Log Group Form'
+aws_cloudwatchlogs access delete_log_stream:
+    title: 'Access Delete Log Stream Form'
+aws_cloudwatchlogs access filter_log:
+    title: 'Access Filter Log Form'
+aws_cloudwatchlogs access generate_log:
+    title: 'Access Generate Log Form'

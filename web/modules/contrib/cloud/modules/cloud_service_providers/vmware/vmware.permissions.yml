@@ -1,0 +1,6 @@
+###########
+# VMware
+###########
+administer vmware:
+  title: 'Administer VMware settings'
+  description: 'Perform administration tasks for VMware.'

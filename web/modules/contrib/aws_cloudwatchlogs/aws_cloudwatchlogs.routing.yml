@@ -1,0 +1,55 @@
+aws_cloudwatchlogs.settings:
+  path: '/admin/reports/aws-cloudwatchlogs/settings'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\AwsCloudwatchLogSettingsForm'
+    _title: 'AWS Cloudwatch Logs Settings'
+  requirements:
+    _permission: 'aws_cloudwatchlogs administer settings'
+
+aws_cloudwatchlogs.generate_log_form:
+  path: 'admin/reports/aws-cloudwatchlogs/generate-log'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\GenerateLogForm'
+    _title: 'Generate All Logs'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access generate_log'
+
+aws_cloudwatchlogs.filter_log_form:
+  path: 'admin/reports/aws-cloudwatchlogs/filter-log'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\FilterLogForm'
+    _title: 'Filter Log'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access filter_log'
+
+aws_cloudwatchlogs.create_log_group_form:
+  path: 'admin/reports/aws-cloudwatchlogs/create-log-group'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\CreateLogGroupForm'
+    _title: 'Create Log Group'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access create_log_group'
+
+aws_cloudwatchlogs.create_log_stream_form:
+  path: 'admin/reports/aws-cloudwatchlogs/create-log-stream'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\CreateLogStreamForm'
+    _title: 'Create Log Stream'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access create_log_stream'
+
+aws_cloudwatchlogs.delete_log_group_form:
+  path: 'admin/reports/aws-cloudwatchlogs/delete-log-group'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\DeleteLogGroupForm'
+    _title: 'Delete Log Group'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access delete_log_group'
+
+aws_cloudwatchlogs.delete_log_stream_form:
+  path: 'admin/reports/aws-cloudwatchlogs/delete-log-stream'
+  defaults:
+    _form: '\Drupal\aws_cloudwatchlogs\Form\DeleteLogStreamForm'
+    _title: 'Delete Log Stream'
+  requirements:
+    _permission: 'aws_cloudwatchlogs access delete_log_stream'

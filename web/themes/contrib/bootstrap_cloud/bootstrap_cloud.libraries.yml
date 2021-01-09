@@ -1,0 +1,45 @@
+global-scripts:
+  js:
+    js/bootstrap_for_cloud.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+
+red-color-theme:
+  css:
+    theme:
+      css/red-theme.css: {}
+
+dark-theme:
+  css:
+    theme:
+      css/dark-theme.css: {}
+
+oceanic-theme:
+  css:
+    theme:
+      css/oceanic-theme.css: {}
+
+storm-theme:
+  css:
+    theme:
+      css/storm-theme.css: {}
+
+typhoon-theme:
+  css:
+    theme:
+      css/typhoon-theme.css: {}
+
+framework:
+  css:
+    theme:
+      css/style.css: {}
+      css/nav.css: {}
+      css/table.css: {}
+      css/form.css: {}
+      css/views.css: {}
+      css/media.css: {}
+      css/fonts.css: {}
+  js:
+    js/menu.js: {}

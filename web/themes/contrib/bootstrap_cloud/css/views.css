@@ -1,0 +1,26 @@
+.view-content h2 {
+  margin: 15px;
+  font-size: x-large;
+  border: 1px;
+}
+
+.views-form .dropdown-menu {
+  min-width: 0;
+}
+
+.view-content .views-form .form-group {
+  margin-bottom: 20px;
+}
+
+.view-filters {
+  margin-bottom: 20px;
+}
+
+.view-content .views-form #edit-header .form-group,
+.view-filters .form-group {
+  padding-right: 10px;
+}
+
+.view-content .views-form #edit-header {
+  border-bottom: 1px solid #ddd;
+}

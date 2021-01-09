@@ -1,0 +1,13 @@
+name: 'Docker'
+type: module
+description: 'Allows users to manage Docker configuration.'
+package: Cloud service providers
+core_version_requirement: ^8.8 || ^9
+configure: docker.settings
+dependencies:
+  - cloud:cloud
+
+# Information added by Drupal.org packaging script on 2020-07-24
+version: '8.x-2.0'
+project: 'cloud'
+datestamp: 1595555551

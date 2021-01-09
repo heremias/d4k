@@ -1,0 +1,16 @@
+{
+    "name": "drupal/aws_cloudwatchlogs",
+    "description": "Module to integrate drupal with AWS Cloudwatch Logs",
+    "type": "drupal-module",
+    "require": {
+        "aws/aws-sdk-php": "^3.18",
+        "drupal/key": "^1.13"
+    },
+    "authors": [
+        {
+            "name": "Akansha Saxena",
+            "email": "saxenaakansha30@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

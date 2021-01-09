@@ -1,0 +1,19 @@
+table.sticky-header {
+  margin-top: 60px;
+}
+
+.table-responsive {
+  overflow-y: visible !important;
+}
+
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+
+td .checkbox label {
+  padding-top: 4px;
+}
+
+.bulk-delete-form .table-responsive .select-all {
+  width: 37px;
+}

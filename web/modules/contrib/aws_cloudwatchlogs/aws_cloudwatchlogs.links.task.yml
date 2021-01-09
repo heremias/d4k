@@ -1,0 +1,28 @@
+aws_cloudwatchlogs.settings:
+  title: 'Settings'
+  route_name: aws_cloudwatchlogs.settings
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.generate_log_form:
+  title: 'Generate All Logs'
+  route_name: aws_cloudwatchlogs.generate_log_form
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.filter_log_form:
+  title: 'Filter Log'
+  route_name: aws_cloudwatchlogs.filter_log_form
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.create_log_group_form:
+  title: 'Create Log Group'
+  route_name: aws_cloudwatchlogs.create_log_group_form
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.create_log_stream_form:
+  title: 'Create Log Stream'
+  route_name: aws_cloudwatchlogs.create_log_stream_form
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.delete_log_group_form:
+  title: 'Delete Log Group'
+  route_name: aws_cloudwatchlogs.delete_log_group_form
+  base_route: aws_cloudwatchlogs.settings
+aws_cloudwatchlogs.delete_log_stream_form:
+  title: 'Delete Log Stream'
+  route_name: aws_cloudwatchlogs.delete_log_stream_form
+  base_route: aws_cloudwatchlogs.settings

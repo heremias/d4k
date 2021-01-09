@@ -1,0 +1,12 @@
+name: AWS Cloudwatch Logs
+description: Plugin to integrate Drupal with AWS Cloudwatch Logs.
+core_version_requirement: ^8.8 || ^9
+type: module
+configure: aws_cloudwatchlogs.settings
+dependencies:
+  - drupal:key
+
+# Information added by Drupal.org packaging script on 2020-05-17
+version: '8.x-1.0'
+project: 'aws_cloudwatchlogs'
+datestamp: 1589712177

@@ -1,0 +1,5 @@
+aws_cloudwatchlogs.settings:
+  title: 'AWS CloudWatch Logs'
+  parent: system.admin_reports
+  description: 'Configure AWS CloudWatch Logs.'
+  route_name: aws_cloudwatchlogs.settings

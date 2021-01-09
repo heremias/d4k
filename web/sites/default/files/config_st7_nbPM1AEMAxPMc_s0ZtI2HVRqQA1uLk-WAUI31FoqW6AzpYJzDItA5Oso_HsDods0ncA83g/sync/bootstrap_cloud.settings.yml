@@ -1,0 +1,33 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: /themes/contrib/bootstrap_cloud/favicon.ico
+  use_default: true
+schemas:
+  bootstrap: 8000
+  bootstrap_cloud: 8000
+table_responsive: '-1'
+navbar_position: fixed-top
+cdn_theme: bootstrap
+cdn_cache_ttl_versions: '604800'
+cdn_cache_ttl_themes: '604800'
+cdn_cache_ttl_assets: '0'
+cdn_cache_ttl_library: '0'
+reset_http_request_cache: ''
+table: ''
+fluid_container: 1
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+tooltip_placement: 'auto top'
+font_size: medium_text
+font_family: lucida_grande
+theme_color: blue
+_core:
+  default_config_hash: TPovWvXRC8EO7UVXZoVp3wDIyr4dIR49CmlethQakSI

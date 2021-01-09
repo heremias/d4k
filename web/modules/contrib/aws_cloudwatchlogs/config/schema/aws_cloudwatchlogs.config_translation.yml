@@ -1,0 +1,5 @@
+aws_cloudwatchlogs.settings:
+  title: 'Example module'
+  base_route_name: aws_cloudwatchlogs.settings
+  names:
+    - aws_cloudwatchlogs.settings

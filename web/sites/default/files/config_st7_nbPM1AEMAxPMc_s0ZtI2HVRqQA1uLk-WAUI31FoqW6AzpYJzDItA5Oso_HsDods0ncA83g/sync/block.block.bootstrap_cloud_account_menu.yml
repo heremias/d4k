@@ -1,0 +1,27 @@
+uuid: 38b325c5-c872-4422-afd8-4d833b1c8b58
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bootstrap_cloud
+_core:
+  default_config_hash: PZVcj-3RbsQUFnhES05bjolGVW1vUZYNnEMpTsBiA7I
+id: bootstrap_cloud_account_menu
+theme: bootstrap_cloud
+region: navigation_collapsible
+weight: 11
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

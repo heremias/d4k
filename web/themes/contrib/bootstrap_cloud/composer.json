@@ -1,0 +1,7 @@
+{
+  "name": "drupal/bootstrap_cloud",
+  "type": "drupal-theme",
+  "require": {
+    "drupal/bootstrap": "^3.22"
+  }
+}

@@ -1,0 +1,202 @@
+<?php
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+ * Implements hook_form_system_theme_settings_alter().
+ */
+function bootstrap_cloud_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+
+  // Set weight for menu.
+  $form['general']['#weight'] = 1;
+  $form['components']['#weight'] = 2;
+  $form['javascript']['#weight'] = 3;
+  $form['cdn']['#weight'] = 4;
+  $form['advanced']['#weight'] = 6;
+
+  $form['bootstrap_for_cloud'] = [
+    '#type' => 'details',
+    '#title' => 'Bootstrap for cloud',
+    '#group' => 'bootstrap',
+    '#weight' => 5,
+  ];
+
+  $theme_color_option = [
+    'blue' => t('Blue'),
+    'red' => t('Red'),
+    'dark' => t('Dark'),
+    'oceanic' => t('Oceanic'),
+    'storm' => t('Storm'),
+    'typhoon' => t('Typhoon'),
+  ];
+
+  $font_family_option = [
+    'lucida_grande' => t('Lucida Grande'),
+    'lato' => t('Lato'),
+    'hiramarupro_w4' => t('HiraMaruPro-W4'),
+    'meiryo' => t('Meiryo'),
+    'trebuchet' => t('Trebuchet'),
+    'trebuchet_ms' => t('Trebuchet MS'),
+    'verdana' => t('Verdana'),
+    'arial' => t('Arial'),
+    'sans-serif' => t('sans-serif'),
+  ];
+
+  $font_size_option = [
+    'extra_small_text' => t('Extra Small'),
+    'small_text' => t('Small'),
+    'medium_text' => t('Medium'),
+    'large_text' => t('Large'),
+    'extra_large_text' => t('Extra Large'),
+  ];
+
+  $form['bootstrap_for_cloud']['theme_color'] = [
+    '#type' => 'select',
+    '#title' => ('Theme'),
+    '#options' => $theme_color_option,
+    '#default_value' => theme_get_setting('theme_color'),
+    '#description' => t('Choose a theme provided by Bootstrap for Cloud.'),
+  ];
+
+  $form['bootstrap_for_cloud']['font_family'] = [
+    '#type' => 'select',
+    '#title' => ('Font Family'),
+    '#options' => $font_family_option,
+    '#default_value' => theme_get_setting('font_family'),
+    '#description' => t('Choose the font family.'),
+  ];
+
+  $form['bootstrap_for_cloud']['font_size'] = [
+    '#type' => 'select',
+    '#title' => ('Font Size'),
+    '#options' => $font_size_option,
+    '#default_value' => theme_get_setting('font_size'),
+    '#description' => t('Choose the font size.'),
+  ];
+
+  $form['#attached']['library'][] = 'bootstrap_cloud/global-scripts';
+
+  $theme_color = empty(theme_get_setting('theme_color')) ? 'blue' : theme_get_setting('theme_color');
+  $font_family = empty(theme_get_setting('font_family')) ? 'lucida_grande' : theme_get_setting('font_family');
+  $font_size = empty(theme_get_setting('font_size')) ? 'medium_text' : theme_get_setting('font_size');
+
+  // Set text resize option in drupalSettings.
+  $form['#attached']['drupalSettings']['bootstrap_for_cloud']['theme_color'] = $theme_color_option[$theme_color];
+  $form['#attached']['drupalSettings']['bootstrap_for_cloud']['font_family'] = $font_family_option[$font_family];
+  $form['#attached']['drupalSettings']['bootstrap_for_cloud']['font_size'] = $font_size_option[$font_size];
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function bootstrap_cloud_preprocess_html(&$variables) {
+  $variables['font_size_html'] = theme_get_setting('font_size');
+  $font_family_option = [
+    'lucida_grande' => t('Lucida Grande'),
+    'lato' => t('Lato'),
+    'hiramarupro_w4' => t('HiraMaruPro-W4'),
+    'meiryo' => t('Meiryo'),
+    'trebuchet' => t('Trebuchet'),
+    'trebuchet_ms' => t('Trebuchet MS'),
+    'verdana' => t('Verdana'),
+    'arial' => t('Arial'),
+    'sans-serif' => t('sans-serif'),
+  ];
+
+  // Set selected font family in Drupal settings.
+  $font_family = empty(theme_get_setting('font_family')) ? 'lucida_grande' : theme_get_setting('font_family');
+  $variables['#attached']['drupalSettings']['bootstrap_for_cloud']['font_family'] = $font_family_option[$font_family];
+
+  $theme_color_option = [
+    'blue' => t('Blue'),
+    'red' => t('Red'),
+    'dark' => t('Dark'),
+    'oceanic' => t('Oceanic'),
+    'storm' => t('Storm'),
+    'typhoon' => t('Typhoon'),
+  ];
+
+  $theme_color = empty(theme_get_setting('theme_color')) ? 'blue' : theme_get_setting('theme_color');
+
+  // Set selected theme color in drupal settings.
+  $variables['#attached']['drupalSettings']['bootstrap_for_cloud']['theme_color'] = $theme_color_option[$theme_color];
+
+  if (theme_get_setting('theme_color') === 'red') {
+    $variables['#attached']['library'][] = 'bootstrap_cloud/red-color-theme';
+  }
+  if (theme_get_setting('theme_color') === 'dark') {
+    $variables['#attached']['library'][] = 'bootstrap_cloud/dark-theme';
+  }
+  if (theme_get_setting('theme_color') === 'oceanic') {
+    $variables['#attached']['library'][] = 'bootstrap_cloud/oceanic-theme';
+  }
+  if (theme_get_setting('theme_color') === 'storm') {
+    $variables['#attached']['library'][] = 'bootstrap_cloud/storm-theme';
+  }
+  if (theme_get_setting('theme_color') === 'typhoon') {
+    $variables['#attached']['library'][] = 'bootstrap_cloud/typhoon-theme';
+  }
+  $variables['#attached']['library'][] = 'bootstrap_cloud/global-scripts';
+}
+
+/**
+ * Implements hook_bootstrap_iconize_text_alter().
+ */
+function bootstrap_cloud_bootstrap_iconize_text_alter(&$data) {
+  $data = [
+    // Text that match these specific strings are checked first.
+    'matches' => [],
+
+    // Text containing these words anywhere in the string are checked last.
+    'contains' => [
+      t('Disassociate')->render() => 'remove',
+      t('Associate')->render() => 'ok',
+      t('Add')->render() => 'plus',
+      t('Launch')->render() => 'play',
+      t('Start')->render() => 'play',
+      t('Reboot')->render() => 'repeat',
+      t('Stop')->render() => 'stop',
+      t('Terminate')->render() => 'remove',
+      t('Delete')->render() => 'remove',
+      t('Create')->render() => 'plus',
+      t('Copy')->render() => 'duplicate',
+      t('List')->render() => 'th-list',
+      t('Refresh All')->render() => 'refresh',
+      t('Refresh')->render() => 'repeat',
+      t('Log out')->render() => 'log-out',
+      t('Apply')->render() => 'ok',
+      t('Attach')->render() => 'tag',
+      t('Detach')->render() => 'tags',
+      t('Accept')->render() => 'ok',
+      t('Devel')->render() => 'devel',
+
+      t('Manage')->render() => 'cog',
+      t('Configure')->render() => 'cog',
+      t('Settings')->render() => 'cog',
+      t('Download')->render() => 'download',
+      t('Export')->render() => 'export',
+      t('Filter')->render() => 'filter',
+      t('Import')->render() => 'download-alt',
+      t('Save')->render() => 'ok',
+      t('Update')->render() => 'ok',
+      t('Edit')->render() => 'wrench',
+      t('Uninstall')->render() => 'trash',
+      t('Install')->render() => 'plus',
+      t('Write')->render() => 'plus',
+      t('Cancel')->render() => 'remove',
+      t('Remove')->render() => 'trash',
+      t('Reset')->render() => 'remove-circle',
+      t('Search')->render() => 'search',
+      t('Upload')->render() => 'upload',
+      t('Preview')->render() => 'eye-open',
+      t('Log in')->render() => 'log-in',
+    ],
+  ];
+}

@@ -1,0 +1,14 @@
+#  base_route: 'vmware.settings'
+vmware.settings.local_tasks.profile_list:
+  title: 'Profiles'
+  route_name: 'vmware.settings'
+  base_route: 'vmware.settings'
+  description: 'VMware Profile List.'
+  weight: 0
+
+vmware.settings.local_tasks.options:
+  title: 'Settings'
+  route_name: 'vmware.settings.options'
+  base_route: 'vmware.settings'
+  description: 'Configure VMware.'
+  weight: 1

@@ -1,0 +1,43 @@
+services:
+  logger.channel.aws_cloudwatchlogs:
+    parent: logger.channel_base
+    arguments: ['aws_cloudwatchlogs']
+  aws_cloudwatchlogs.get_client:
+    class: Drupal\aws_cloudwatchlogs\Services\GetClient
+    arguments: ['@config.factory', '@key.repository', '@messenger']
+  aws_cloudwatchlogs.utility:
+    class: Drupal\aws_cloudwatchlogs\Services\Utility
+    arguments: ['@config.factory', '@current_user']
+  aws_cloudwatchlogs.get_log_events:
+    class: Drupal\aws_cloudwatchlogs\Services\GetLogEvents
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.generate_csv:
+    class: Drupal\aws_cloudwatchlogs\Services\GenerateCSV
+    arguments: ['@logger.channel.aws_cloudwatchlogs', '@messenger', '@aws_cloudwatchlogs.utility', '@file_system']
+  aws_cloudwatchlogs.download:
+    class: Drupal\aws_cloudwatchlogs\Services\Download
+    arguments: ['@aws_cloudwatchlogs.generate_csv','@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.filter_log_events:
+    class: Drupal\aws_cloudwatchlogs\Services\FilterLogEvents
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.describe_log_groups:
+    class: Drupal\aws_cloudwatchlogs\Services\DescribeLogGroups
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.describe_log_streams:
+    class: Drupal\aws_cloudwatchlogs\Services\DescribeLogStreams
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.create_log_group:
+    class: Drupal\aws_cloudwatchlogs\Services\CreateLogGroup
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.create_log_stream:
+    class: Drupal\aws_cloudwatchlogs\Services\CreateLogStream
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.delete_log_group:
+    class: Drupal\aws_cloudwatchlogs\Services\DeleteLogGroup
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.delete_log_stream:
+    class: Drupal\aws_cloudwatchlogs\Services\DeleteLogStream
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger']
+  aws_cloudwatchlogs.put_log_events:
+    class: Drupal\aws_cloudwatchlogs\Services\PutLogEvents
+    arguments: ['@aws_cloudwatchlogs.get_client', '@logger.channel.aws_cloudwatchlogs', '@messenger', '@aws_cloudwatchlogs.create_log_group', '@aws_cloudwatchlogs.create_log_stream', '@aws_cloudwatchlogs.describe_log_streams', '@aws_cloudwatchlogs.describe_log_groups', '@aws_cloudwatchlogs.utility']

@@ -1,0 +1,16 @@
+aws_cloudwatchlogs.settings:
+  type: config_object
+  label: 'Aws Cloudwatchlogs Settings'
+  mapping:
+    region:
+      type: label
+      label: 'Region'
+    version:
+      type: label
+      label: 'Version'
+    access_key:
+      type: label
+      label: 'Access Key'
+    secret:
+      type: label
+      label: 'Secret'
