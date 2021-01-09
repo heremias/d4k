@@ -1,0 +1,15 @@
+alpine:
+  version: VERSION
+  js:
+    //cdn.jsdelivr.net/gh/alpinejs/alpine@v2.4.1/dist/alpine.min.js: {type: external, minified: true}
+
+morphdom:
+  version: VERSION
+  js:
+    //cdn.jsdelivr.net/npm/morphdom@2.6.1/dist/morphdom.min.js: {type: external, minified: true}
+
+tailwind:
+  version: VERSION
+  css:
+    theme:
+      css/dist/tailwind.css: {}

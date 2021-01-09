@@ -1,0 +1,41 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for CKEditor Resize.
+ */
+
+/**
+ * Implements hook_requirements().
+ */
+function ckeditor_resize_requirements($phase) {
+  $requirements = [];
+
+  if ($phase == 'install' || $phase == 'runtime') {
+    $path = '/libraries/resize/';
+    $plugin_detected = file_exists(DRUPAL_ROOT . $path . 'plugin.js');
+
+    if ($plugin_detected) {
+      $requirements['resize'] = [
+        'title' => t('CKEditor Resize'),
+        'value' => t('Plugin detected'),
+        'severity' => REQUIREMENT_OK,
+      ];
+    }
+    else {
+      $requirements['resize'] = [
+        'title' => t('CKEditor Resize'),
+        'value' => t('Plugin not detected'),
+        'severity' => REQUIREMENT_ERROR,
+        'description' => t('The CKEditor plugin <b>Resize</b> is
+          required. Download <a href=":url">here</a> and copy to
+          <code>:path</code>.', [
+            ':url' => 'https://ckeditor.com/cke4/addon/resize',
+            ':path' => $path,
+          ]),
+      ];
+    }
+  }
+
+  return $requirements;
+}

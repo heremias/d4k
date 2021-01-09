@@ -1,0 +1,91 @@
+<?php
+
+/**
+ * @file
+ * Contains hooks for the Single File Components module.
+ */
+
+use Drupal\Core\Asset\AttachedAssetsInterface;
+use Drupal\sfc\ComponentNameHelper;
+
+/**
+ * Implements hook_library_info_build().
+ *
+ * Defines libraries for single file components dynamically.
+ */
+function sfc_library_info_build() {
+  $libraries = [];
+  /** @var \Drupal\Component\Plugin\PluginManagerInterface $manager */
+  $manager = \Drupal::service('plugin.manager.single_file_component');
+  foreach ($manager->getDefinitions() as $id => $definition) {
+    /** @var \Drupal\sfc\ComponentInterface $component */
+    $component = $manager->createInstance($id);
+    $library = $component->getLibrary();
+    if (empty($library)) {
+      continue;
+    }
+    $libraries[str_replace('sfc/', '', ComponentNameHelper::getLibraryName($component))] = $library;
+  }
+  return $libraries;
+}
+
+/**
+ * Implements hook_css_alter().
+ *
+ * Ensures that real asset files are written at the last moment for components.
+ */
+function sfc_css_alter(&$css, AttachedAssetsInterface $assets) {
+  $written = &drupal_static(__FUNCTION__, []);
+  foreach ($assets->getLibraries() as $name) {
+    if (ComponentNameHelper::isComponentLibrary($name)) {
+      $id = ComponentNameHelper::getIdFromLibraryName($name);
+      if (isset($written[$id])) {
+        continue;
+      }
+      /** @var \Drupal\Component\Plugin\PluginManagerInterface $manager */
+      $manager = \Drupal::service('plugin.manager.single_file_component');
+      /** @var \Drupal\sfc\ComponentInterface $component */
+      $component = $manager->createInstance($id);
+      if ($component->shouldWriteAssets()) {
+        $component->writeAssets();
+      }
+      $written[$id] = TRUE;
+    }
+  }
+}
+
+/**
+ * Implements hook_css_alter().
+ */
+function sfc_js_alter(&$js, AttachedAssetsInterface $assets) {
+  sfc_css_alter($js, $assets);
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sfc_theme() {
+  $implementations = [];
+  /** @var \Drupal\Component\Plugin\PluginManagerInterface $manager */
+  $manager = \Drupal::service('plugin.manager.single_file_component');
+  foreach ($manager->getDefinitions() as $id => $definition) {
+    /** @var \Drupal\sfc\ComponentInterface $component */
+    $component = $manager->createInstance($id);
+    // This allows themes to override templates provided by components.
+    $implementations["sfc__$id"] = [
+      'template' => ComponentNameHelper::getTemplateName($component),
+      // This special path is used to identify components in the loader.
+      'path' => 'sfc',
+    ];
+    // Handle theme hook overrides if present.
+    if (isset($definition['overrides'])) {
+      foreach ($definition['overrides'] as $override) {
+        $implementations[$override] = $implementations["sfc__$id"];
+        if (strpos($override, '__') !== FALSE) {
+          $implementations[$override]['base hook'] = preg_replace('/__.*/', '', $override);
+        }
+      }
+    }
+  }
+  return $implementations;
+}

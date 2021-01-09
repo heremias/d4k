@@ -1,0 +1,13 @@
+name: 'Published and corrected dates'
+description: 'Added a published and corrected date property to nodes.'
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: 'Workflow'
+dependencies:
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2020-09-08
+version: '2.0.0'
+project: 'published_corrected_date'
+datestamp: 1599571154

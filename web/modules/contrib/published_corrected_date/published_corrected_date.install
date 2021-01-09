@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for published_corrected date module.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Fill out the initial values in the added fields after creating them.
+ */
+function published_corrected_date_install() {
+  $database = \Drupal::database();
+  $database->query('UPDATE node_field_data SET published_date = (SELECT MIN(changed) FROM node_field_revision WHERE nid = node_field_data.nid and status = 1 GROUP BY node_field_data.nid);')->execute();
+  $database->query('UPDATE node_field_data SET correction_number = (SELECT count(0) - 1 FROM node_field_revision WHERE nid = node_field_data.nid and status = 1 GROUP BY node_field_data.nid);')->execute();
+  $database->query('UPDATE node_field_data SET correction_number = 0 WHERE correction_number IS NULL;')->execute();
+  $database->query('UPDATE node_field_data SET corrected_date = (SELECT MAX(changed) FROM node_field_revision WHERE nid = node_field_data.nid and status = 1 GROUP BY node_field_data.nid) WHERE correction_number > 0;')->execute();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function published_corrected_date_uninstall() {
+  $database = \Drupal::database();
+  $database->query('UPDATE node_field_data SET published_date = NULL, corrected_date = NULL, correction_number = NULL;')->execute();
+}

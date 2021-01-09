@@ -1,0 +1,60 @@
+<?php
+
+/**
+ * @file
+ * Main functionality for the published_corrected_date module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\node\NodeInterface;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function published_corrected_date_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'node') {
+    $fields = [];
+
+    $fields['published_date'] = BaseFieldDefinition::create('timestamp')
+      ->setLabel(t('Published on'))
+      ->setDescription(t('The time that the node was published.'))
+      ->setDefaultValue(NULL)
+      ->setRevisionable(FALSE)
+      ->setTranslatable(TRUE);
+
+    $fields['corrected_date'] = BaseFieldDefinition::create('timestamp')
+      ->setLabel(t('Corrected on'))
+      ->setDescription(t('The time that the node was corrected.'))
+      ->setDefaultValue(NULL)
+      ->setRevisionable(FALSE)
+      ->setTranslatable(TRUE);
+
+    $fields['correction_number'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('Number of corrections'))
+      ->setDescription(t('The number of corrections published.'))
+      ->setDefaultValue(0)
+      ->setRevisionable(FALSE)
+      ->setTranslatable(TRUE);
+    return $fields;
+  }
+}
+
+/**
+ * Implements hook_node_presave().
+ */
+function published_corrected_date_node_presave(NodeInterface $entity) {
+  $now = Drupal::time()->getCurrentTime();
+  if ($entity->isPublished()
+    && (
+      $entity->get('published_date')->isEmpty()
+      || $entity->get('published_date')->getString() == 0
+    )
+  ) {
+    $entity->get('published_date')->setValue($now);
+  }
+  elseif ($entity->isPublished()) {
+    $entity->get('corrected_date')->setValue($now);
+    $entity->get('correction_number')->setValue($entity->get('correction_number')->first()->get('value')->getValue() + 1);
+  }
+}

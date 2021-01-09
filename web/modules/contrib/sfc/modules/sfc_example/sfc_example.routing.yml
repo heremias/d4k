@@ -1,0 +1,27 @@
+sfc_example.hello:
+  path: '/hello/{name}'
+  defaults:
+    _controller: '\Drupal\sfc\Controller\ComponentController::build'
+    component_id: 'example_controller'
+  requirements:
+    _access: 'TRUE'
+sfc_example.styleguide:
+  path: '/example-styleguide'
+  defaults:
+    _controller: '\Drupal\sfc\Controller\ComponentController::build'
+    component_id: 'example_styleguide'
+  requirements:
+    _access: 'TRUE'
+sfc_example.alpine_autocomplete:
+  path: '/alpine-autocomplete/{autocomplete}'
+  defaults:
+    _controller: '\Drupal\sfc\Controller\ComponentController::build'
+    component_id: 'example_alpine_autocomplete'
+  requirements:
+    _access: 'TRUE'
+sfc_example.alpine_json:
+  path: '/alpine-json'
+  defaults:
+    _controller: '\Drupal\sfc_example\Controller\ExampleController::randomCatBreed'
+  requirements:
+    _access: 'TRUE'
