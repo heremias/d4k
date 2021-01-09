@@ -1,0 +1,22 @@
+# Spanish translation of N1ED - Bootstrap Editor for CKEditor, File Manager, Image Editor, Widgets, custom templates and much more (8.x-2.32)
+# Copyright (c) 2020 by the Spanish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: N1ED - Bootstrap Editor for CKEditor, File Manager, Image Editor, Widgets, custom templates and much more (8.x-2.32)\n"
+"POT-Creation-Date: 2020-11-05 10:50+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Configuration"
+msgstr "Configuración"
+msgid "Installation"
+msgstr "Instalación"
+msgid "Troubleshooting"
+msgstr "Solución de problemas"
+msgid "CKEditor"
+msgstr "CKEditor"

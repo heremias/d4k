@@ -1,11 +1,18 @@
 module:
+  accessible_media_embed: 0
   action: 0
   aggregator: 0
   block: 0
   block_content: 0
+  block_styles: 0
+  block_styles_bootstrap: 0
   breakpoint: 0
   ckeditor: 0
+  ckeditor_div: 0
+  ckeditor_entity_link: 0
   ckeditor_layout_manager: 0
+  ckeditor_resize: 0
+  codesnippet: 0
   color: 0
   comment: 0
   config: 0
@@ -14,17 +21,24 @@ module:
   content_moderation: 0
   contextual: 0
   crop: 0
+  dashboards: 0
+  dashboards_comments: 0
+  dashboards_statistic: 0
+  dashboards_views: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_embed: 0
   external_data_source: 0
   field: 0
   field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
+  fontawesome: 0
   gutenberg: 0
   history: 0
   image: 0
@@ -32,18 +46,25 @@ module:
   jsonapi: 0
   language: 0
   layout_builder: 0
+  layout_builder_styles: 0
   layout_discovery: 0
+  lb_claro: 0
   link: 0
+  linkit: 0
+  linkit_media_library: 0
   locale: 0
   media: 0
   media_library: 0
+  media_library_theme_reset: 0
   menu_link_content: 0
   menu_ui: 0
+  n1ed: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   path_alias: 0
+  published_corrected_date: 0
   quickedit: 0
   rdf: 0
   responsive_image: 0
@@ -51,9 +72,13 @@ module:
   search_api: 0
   serialization: 0
   settings_tray: 0
+  sfc: 0
+  sfc_example: 0
   shortcut: 0
   smart_trim: 0
+  split_preview: 0
   statistics: 0
+  styles_api: 0
   system: 0
   taxonomy: 0
   telephone: 0
