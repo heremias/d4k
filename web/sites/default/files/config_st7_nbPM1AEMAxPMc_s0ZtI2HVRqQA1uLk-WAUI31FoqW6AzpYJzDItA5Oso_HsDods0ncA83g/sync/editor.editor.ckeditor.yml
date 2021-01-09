@@ -24,6 +24,8 @@ settings:
             - Italic
             - Undo
             - Redo
+            - node
+            - CodeSnippet
         -
           name: Links
           items:

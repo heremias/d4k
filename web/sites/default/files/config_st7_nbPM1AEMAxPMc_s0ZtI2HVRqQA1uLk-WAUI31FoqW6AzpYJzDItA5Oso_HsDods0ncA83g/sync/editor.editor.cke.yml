@@ -85,7 +85,7 @@ settings:
         xhtml: xhtml
         xml: xml
     N1EDEco:
-      enableN1EDEcoSystem: 'true'
+      enableN1EDEcoSystem: 'false'
 image_upload:
   status: false
   scheme: public

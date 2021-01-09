@@ -1,4 +1,4 @@
-colormap: cubehelix
+colormap: viridis
 alpha: 40
 shades: 15
 _core:

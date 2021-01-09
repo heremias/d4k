@@ -15,7 +15,11 @@ label: Body
 description: ''
 required: false
 translatable: true
-default_value: {  }
+default_value:
+  -
+    summary: ''
+    value: "<script src=\"//cdn.public.n1ed.com/N1D8DFLT/widgets.js\"></script>\r\n"
+    format: ckeditor
 default_value_callback: ''
 settings:
   display_summary: true

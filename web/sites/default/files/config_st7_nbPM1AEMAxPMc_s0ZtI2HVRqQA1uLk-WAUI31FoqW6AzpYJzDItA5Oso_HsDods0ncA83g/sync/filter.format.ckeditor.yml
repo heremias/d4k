@@ -2,8 +2,6 @@ uuid: d2cf33b1-1fca-42ed-97be-0be93b8712f1
 langcode: en
 status: true
 dependencies:
-  config:
-    - core.entity_view_mode.media.media_library
   module:
     - gutenberg
     - media
@@ -51,7 +49,7 @@ filters:
     status: true
     weight: 100
     settings:
-      default_view_mode: media_library
+      default_view_mode: default
       allowed_media_types: {  }
       allowed_view_modes: {  }
   filter_html:

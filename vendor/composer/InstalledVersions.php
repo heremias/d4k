@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => 'fe57264b1e4c3dd52d4cecf7c017e7d02b653d90',
+    'reference' => 'e866576771e7f5ffd69c0b8bcacd0b1410754848',
     'name' => 'drupal/recommended-project',
   ),
   'versions' => 
@@ -669,6 +669,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-2.1',
     ),
+    'drupal/crop_image' => 
+    array (
+      'pretty_version' => '1.0.4',
+      'version' => '1.0.4.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1.0.4',
+    ),
     'drupal/dashboards' => 
     array (
       'pretty_version' => 'dev-1.x',
@@ -723,6 +732,15 @@ private static $installed = array (
       ),
       'reference' => '8.x-1.4',
     ),
+    'drupal/entity_browser' => 
+    array (
+      'pretty_version' => '2.5.0',
+      'version' => '2.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.5',
+    ),
     'drupal/entity_embed' => 
     array (
       'pretty_version' => '1.1.0',
@@ -747,6 +765,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '3.0.0',
+    ),
+    'drupal/facets' => 
+    array (
+      'pretty_version' => '1.6.0',
+      'version' => '1.6.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.6',
     ),
     'drupal/field' => 
     array (
@@ -782,6 +809,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/focal_point' => 
+    array (
+      'pretty_version' => '1.5.0',
+      'version' => '1.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.5',
     ),
     'drupal/fontawesome' => 
     array (
@@ -842,6 +878,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/image_widget_crop' => 
+    array (
+      'pretty_version' => '2.3.0',
+      'version' => '2.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-2.3',
     ),
     'drupal/inline_form_errors' => 
     array (
@@ -1085,7 +1130,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => 'fe57264b1e4c3dd52d4cecf7c017e7d02b653d90',
+      'reference' => 'e866576771e7f5ffd69c0b8bcacd0b1410754848',
     ),
     'drupal/responsive_image' => 
     array (
@@ -1116,6 +1161,15 @@ private static $installed = array (
       array (
       ),
       'reference' => '8.x-1.18',
+    ),
+    'drupal/search_api_autocomplete' => 
+    array (
+      'pretty_version' => '1.4.0',
+      'version' => '1.4.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-1.4',
     ),
     'drupal/serialization' => 
     array (
@@ -1153,6 +1207,15 @@ private static $installed = array (
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/smart_content' => 
+    array (
+      'pretty_version' => '3.0.0-rc1',
+      'version' => '3.0.0.0-RC1',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '3.0.0-rc1',
     ),
     'drupal/smart_trim' => 
     array (
@@ -1272,12 +1335,31 @@ private static $installed = array (
         0 => '9.1.0',
       ),
     ),
+    'drupal/vefl' => 
+    array (
+      'pretty_version' => '3.0.0',
+      'version' => '3.0.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '8.x-3.0',
+    ),
     'drupal/views' => 
     array (
       'replaced' => 
       array (
         0 => '9.1.0',
       ),
+    ),
+    'drupal/views_block_placement_exposed_form_defaults' => 
+    array (
+      'pretty_version' => 'dev-1.x',
+      'version' => 'dev-1.x',
+      'aliases' => 
+      array (
+        0 => '1.x-dev',
+      ),
+      'reference' => '606aac272c255b06f454d164501e0442a4ec75e7',
     ),
     'drupal/views_ui' => 
     array (

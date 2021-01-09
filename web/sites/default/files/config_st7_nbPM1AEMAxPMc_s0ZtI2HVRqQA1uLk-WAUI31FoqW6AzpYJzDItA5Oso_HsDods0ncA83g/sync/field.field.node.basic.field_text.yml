@@ -1,0 +1,21 @@
+uuid: 2e3663e6-957a-4b7d-b12e-74bcc1074703
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - node.type.basic
+  module:
+    - text
+id: node.basic.field_text
+field_name: field_text
+entity_type: node
+bundle: basic
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

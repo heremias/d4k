@@ -1,0 +1,23 @@
+uuid: 03ddd7d2-75d3-4cdd-bfeb-88bc92162dc6
+langcode: en
+status: true
+dependencies:
+  module:
+    - book
+  theme:
+    - olivero
+_core:
+  default_config_hash: xxqzeHDwRJfhYFvHhktKYfWRx4KsJwkTVBhSlltWcNE
+id: book_navigation
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: book_navigation
+settings:
+  id: book_navigation
+  label: 'Book navigation'
+  provider: book
+  label_display: visible
+  block_mode: 'book pages'
+visibility: {  }

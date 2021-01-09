@@ -6,6 +6,7 @@ module:
   block_content: 0
   block_styles: 0
   block_styles_bootstrap: 0
+  book: 0
   breakpoint: 0
   ckeditor: 0
   ckeditor_div: 0
@@ -21,6 +22,7 @@ module:
   content_moderation: 0
   contextual: 0
   crop: 0
+  crop_image: 0
   dashboards: 0
   dashboards_comments: 0
   dashboards_statistic: 0
@@ -31,17 +33,22 @@ module:
   dynamic_page_cache: 0
   editor: 0
   embed: 0
+  entity_browser: 0
   entity_embed: 0
   external_data_source: 0
+  facets: 0
   field: 0
   field_layout: 0
   field_ui: 0
   file: 0
   filter: 0
+  focal_point: 0
   fontawesome: 0
   gutenberg: 0
+  help: 0
   history: 0
   image: 0
+  image_widget_crop: 0
   inline_form_errors: 0
   jsonapi: 0
   language: 0
@@ -69,13 +76,18 @@ module:
   rdf: 0
   responsive_image: 0
   rest: 0
+  search: 0
   search_api: 0
+  search_api_autocomplete: 0
   search_api_db: 0
   serialization: 0
   settings_tray: 0
   sfc: 0
   sfc_example: 0
   shortcut: 0
+  smart_content: 0
+  smart_content_block: 0
+  smart_content_browser: 0
   smart_trim: 0
   split_preview: 0
   statistics: 0
@@ -88,6 +100,8 @@ module:
   tracker: 0
   update: 0
   user: 0
+  vefl: 0
+  views_block_placement_exposed_form_defaults: 0
   views_ui: 0
   workflows: 0
   workspaces: 0

@@ -1,0 +1,9 @@
+entity_browser_image_crop:
+  preview_image_style: thumbnail
+  crop_preview_image_style: crop_thumbnail
+  show_crop_area: false
+  show_default_crop: true
+  field_widget_remove: true
+  field_widget_replace: true
+_core:
+  default_config_hash: u2abBnRAfgQB9fVMnhbx1rbSiknM3UBeyT3a1m6-sg8
