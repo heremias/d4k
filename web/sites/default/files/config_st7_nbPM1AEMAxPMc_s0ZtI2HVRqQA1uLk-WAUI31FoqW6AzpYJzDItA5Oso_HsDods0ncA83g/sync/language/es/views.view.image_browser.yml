@@ -1,4 +1,3 @@
-label: 'Explorador de imágenes'
 display:
   default:
     display_title: Máster
@@ -35,5 +34,3 @@ display:
         filename:
           expose:
             label: Nombre
-  entity_browser_1:
-    display_title: 'Navegador de entidades'
