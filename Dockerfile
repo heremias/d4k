@@ -29,6 +29,7 @@ COPY d4k.settings.php /var/www/html/web/sites/default/settings.php
 
 # Make sure file ownership is correct on the document root.
 RUN chown -R www-data:www-data /var/www/html/web
+RUN chmod -R 775 /var/www/html/web/private
 
 # Add Drush Launcher.
 RUN curl -OL https://github.com/drush-ops/drush-launcher/releases/download/0.6.0/drush.phar \
