@@ -1,4 +1,4 @@
-ARG DRUPAL_BASE_IMAGE=geerlingguy/drupal:latest
+ARG DRUPAL_BASE_IMAGE=heremias/drupal:latest
 
 # PHP Dependency install via Composer.
 FROM composer as vendor
