@@ -1,0 +1,17 @@
+name: Component blocks test
+description: 'Contains test component blocks'
+core_version_requirement: ^8.8 || ~9.0
+type: module
+component-libraries:
+  component_blocks_test:
+    paths:
+      - ./components
+dependencies:
+  - components:components
+  - component_blocks:component_blocks
+  - drupal:node
+
+# Information added by Drupal.org packaging script on 2020-11-22
+version: '1.2.1'
+project: 'component_blocks'
+datestamp: 1606082244

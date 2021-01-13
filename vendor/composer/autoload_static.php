@@ -175,6 +175,8 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         array (
             'Drush\\Internal\\' => 15,
             'Drush\\' => 6,
+            'Drupal\\ui_patterns_settings_settings\\' => 37,
+            'Drupal\\ui_patterns\\' => 19,
             'Drupal\\Driver\\' => 14,
             'Drupal\\Core\\' => 12,
             'Drupal\\Composer\\Plugin\\Scaffold\\' => 32,
@@ -519,6 +521,14 @@ class ComposerStaticInit04ea230804f4a426db76d0ca4cb65dcb
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
+        ),
+        'Drupal\\ui_patterns_settings_settings\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns_layout_builder/src',
+        ),
+        'Drupal\\ui_patterns\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns/src',
         ),
         'Drupal\\Driver\\' => 
         array (
