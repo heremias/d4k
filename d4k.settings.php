@@ -24,6 +24,11 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+$settings['trusted_host_patterns'] = [
+  '^localhost$',
+];
+
+
 // Database connection.
 $databases['default']['default'] = [
   'database' => getenv('DRUPAL_DATABASE_NAME'),
