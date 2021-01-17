@@ -1,5 +1,5 @@
-aws_key: ''
-aws_secret: ''
+aws_key: hobbes_key$
+aws_secret: hobbes_secret$
 aws_region: us-west-2
 _core:
   default_config_hash: ZEmGUDQ8KXtk5Yewte56_Yi7eo711G6rBpFEvKgDnH0
