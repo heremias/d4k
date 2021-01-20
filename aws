@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 docker run \
   --rm \
   -v "$HOME/.aws:/root/.aws:rw" \
